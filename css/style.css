@@ -72,15 +72,28 @@ header nav a:hover {
 }
 
 .ir-arriba {
-	display:none;
-	padding:20px;
-	background:#024959;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
+	background: #009999;
 	position: fixed;
-	bottom:20px;
-	right:20px;
+	bottom:16px;
+	right:32px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:32px;
+	color: white;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+}
+
+.ir-arriba.active {
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
 }
 
 .contenido {

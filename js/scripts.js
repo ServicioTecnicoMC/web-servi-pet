@@ -1,17 +1,9 @@
-$(document).ready(function(){
+  const toTop = document.querySelector(".ir-arriba");
 
-	$('.ir-arriba').click(function(){
-		$('body, html').animate({
-			scrollTop: '0px'
-		}, 300);
-	});
-
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 0 ){
-			$('.ir-arriba').slideDown(300);
-		} else {
-			$('.ir-arriba').slideUp(300);
-		}
-	});
-
-});
+  window.addEventListener("scroll", () => {
+  	if (window.pageYOffset > 100) {
+  		toTop.classList.add("active");
+  	} else {
+  		toTop.classList.remove("active");
+  	}
+  })
