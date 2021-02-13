@@ -79,6 +79,8 @@ header nav a:hover {
 	margin-bottom: 1em;
 }
 
+
+
 @media screen and (max-width: 950px) {
 	header .logo,
 	header nav {
@@ -126,7 +128,7 @@ header nav a:hover {
 		align-content: center;
 	}
 
-	.box1 {
+	.wrapper {
 	}
 }
 @media only screen and (min-width: 0px) and (max-width: 380px){
