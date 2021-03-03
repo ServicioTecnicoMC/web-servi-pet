@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body{
@@ -6,12 +7,12 @@ body{
 
 main{
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
-  margin-bottom: 5px;
+  padding-top: 70px;
 }
+
 .container{
   max-width: 700px;
   width: 100%;
@@ -19,7 +20,8 @@ main{
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  margin-top: 85px;
+  margin: 25px 0;
+  height: auto;
 }
 .container .title{
   font-size: 25px;
@@ -33,7 +35,7 @@ main{
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  width: 30%;
   border-radius: 5px;
   background: linear-gradient(135deg, #2ed071, #389124);
 }
@@ -43,6 +45,11 @@ main{
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
+
+.active__form{
+  flex: 1 0 100%;
+}
+
 form .user-details .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
@@ -65,25 +72,17 @@ form .input-box span.details{
   transition: all 0.3s ease;
 }
 
-form .txt{
-  height: 85px;
-  align-items: center;
-  justify-content: center;
-}
+
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
   border-color: #389124;
 }
-form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
-}
-
 
 form .button{
  height: 45px;
  margin: 35px 0
 }
+
 form .button input{
  height: 100%;
  width: 100%;
@@ -102,6 +101,7 @@ form .button input:hover{
   background: linear-gradient(-135deg, #2ed071, #389124);
 }
 
+
 @media(max-width: 750px){
   .container{
     max-width: 95%;
@@ -109,19 +109,17 @@ form .button input:hover{
 }
 
 @media(max-width: 584px){
-  main {
-    height: 110vh;
-  }
-  .container{
-    max-width: 90%;
+
+  .container {
+    height: auto;
+    word-wrap: break-word;
   }
   form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
   }
   .content form .user-details{
-    max-height: 300px;
-    overflow-y: scroll;
+    max-height: 400px;
   }
   .user-details::-webkit-scrollbar{
     width: 5px;
@@ -133,8 +131,11 @@ form .button input:hover{
     max-width: 85%;
     overflow: hidden;
   }
+  .container h1{
+    font-size: 30px;
+  }
   .container .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
 }

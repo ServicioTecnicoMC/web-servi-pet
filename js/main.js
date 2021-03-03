@@ -91,3 +91,21 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+
+$(function() {
+  $( "#button2" ).click(function() {
+    $( "#button2" ).addClass( "onclic", 250, validate);
+  });
+
+  function validate() {
+    setTimeout(function() {
+      $( "#button2" ).removeClass( "onclic" );
+      $( "#button2" ).addClass( "validate", 450, callback );
+    }, 2250 );
+  }
+    function callback() {
+      setTimeout(function() {
+        $( "#button2" ).removeClass( "validate" );
+      }, 1250 );
+    }
+  });

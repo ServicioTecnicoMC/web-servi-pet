@@ -135,13 +135,13 @@ nav .logo a{
 }
 
 
-@media screen and (max-width:415px){
+@media screen and (max-width:459px){
   nav .logo{
-    margin-left: 20px;
+    margin-left: 10%;
     font-size: 1.2em;
   }
   .icono{
-    margin-right:20px;
+    margin-right:10%;
   }
 
   header .textos h1 {
@@ -149,9 +149,14 @@ nav .logo a{
   }
 }
 
-@media screen and (max-width:330px){
+@media screen and (max-width:400px){
   nav .logo{
     font-size: 1em;
+  }
+}
+@media screen and (max-width:356px){
+  nav .logo{
+    font-size: 0.8em;
   }
 }
 
