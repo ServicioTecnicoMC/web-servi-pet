@@ -176,12 +176,9 @@ nav .logo a{
   float: right;
   background-color: #fdfdfd;
   padding: 150px;
-
-
   -webkit-box-shadow: 0px 0px 15px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 0px 15px 3px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 0px 15px 3px rgba(50, 50, 50, 0.75);
-
 }
 
 .inner-container h1{
