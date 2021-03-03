@@ -41,7 +41,7 @@ function getScrollTopByHref(element) {
 }
 
 function scrollToPosition(to) {
-  // Caso queira o nativo apenas
+  // Si quieres el nativo solo
     // window.scroll({
     // top: to,
     // behavior: "smooth",
@@ -59,7 +59,7 @@ menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 });
 
-// Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
+// Si desea compatibilidad con navegadores antiguos / que no admiten el desplazamiento suave nativo
 /**
  * Smooth scroll animation
  * @param {int} endX: destination x coordinate
