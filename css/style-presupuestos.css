@@ -6,7 +6,7 @@ body{
 
 main{
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
 }
@@ -50,7 +50,7 @@ form .input-box span.details{
   font-weight: 500;
   margin-bottom: 5px;
 }
-.user-details .input-box input{
+.user-details .input-box input,textarea{
   height: 45px;
   width: 100%;
   outline: none;
@@ -98,11 +98,16 @@ form .txt{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #2ed071, #389124);
   }
- @media(max-width: 584px){
- .container{
-  max-width: 100%;
-}
-form .user-details .input-box{
+
+
+
+
+
+  @media(max-width: 584px){
+   .container{
+    max-width: 90%;
+  }
+  form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
   }
@@ -116,8 +121,9 @@ form .user-details .input-box{
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
-  }
-  @media(max-width: 459px){
+}
+
+@media(max-width: 459px){
   .container .content .category{
     flex-direction: column;
   }
