@@ -132,9 +132,8 @@ nav .logo a{
     }
 
     .dos {
-
-        -webkit-clip-path: circle(150% at 100% 0%);
-        clip-path: circle(150% at 100% 0%);
+      -webkit-clip-path: circle(150% at 100% 0%);
+      clip-path: circle(150% at 100% 0%);
 
     }
 }
