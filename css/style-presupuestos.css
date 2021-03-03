@@ -99,21 +99,18 @@ form .txt{
   background: linear-gradient(-135deg, #2ed071, #389124);
   }
 
-@media(max-width: 750px){
+@media(min-width: 750px){
   .container{
     max-width: 95%;
   }
 }
 
-  @media(max-width: 584px){
+  @media(min-width: 584px){
    .container{
     max-width: 90%;
   }
   form .user-details .input-box{
     margin-bottom: 15px;
-    width: 100%;
-  }
-  form .category{
     width: 100%;
   }
   .content form .user-details{

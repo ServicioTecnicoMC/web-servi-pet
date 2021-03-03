@@ -92,7 +92,7 @@ nav .logo a{
 }
 
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width: 768px) {
     .icono {
         display: flex;
         justify-content: center;
