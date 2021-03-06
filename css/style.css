@@ -267,7 +267,7 @@ nav .logo a {
   border: none;
   outline: none;
   border-radius: 50px;
-  background: #389124;
+  background: linear-gradient(135deg, #2ed071, #389124);
   color: #fff;
   text-transform: uppercase;
   padding: 10px 0;
