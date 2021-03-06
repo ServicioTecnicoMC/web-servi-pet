@@ -5,8 +5,10 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  /*//-font-family: 'Raleway', sans-serif;-//*/
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  background: linear-gradient(135deg, #fff, #389124);
 }
 
 header {
@@ -166,7 +168,6 @@ nav .logo a{
 .about-section{
   background: url(pic.jpg) no-repeat left;
   background-size: 55%;
-  background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 0;
 }
@@ -230,6 +231,100 @@ nav .logo a{
 
 /*=====  End of Acerca De  ======*/
 
+/*================================
+=            Contacto            =
+================================*/
+
+.contact-in
+{
+
+  width: 80%;
+  height: auto;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map
+{
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-map iframe
+{
+  width: 100%;
+  height: 100%;
+}
+.contact-form
+{
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 30px;
+  text-align: center;
+}
+.contact-form h1
+{
+  margin-bottom: 10px
+}
+.contact-form-txt
+{
+  width: 100%;
+  height: 40px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-txt::placeholder
+{
+  color: #aaa;
+}
+.contact-form-textarea
+{
+  width: 100%;
+  height: 130px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form-textarea::placeholder
+{
+  color: #aaa;
+}
+
+.contact-form-btn
+{
+  width: 100%;
+  border:none;
+  outline: none;
+  border-radius: 50px;
+  background: #389124;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-form form input:valid
+{
+  border-color: #389124;
+}
+
+/*=====  End of Contacto  ======*/
+
 
 /*==============================
 =            FOOTER            =
@@ -288,7 +383,6 @@ footer{
 }
 
 .page-content{
-  background: #FFFFFa;
   min-height: 100vh;
   font-size: 16px;
   display: flex;
