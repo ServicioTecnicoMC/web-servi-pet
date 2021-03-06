@@ -390,7 +390,7 @@ footer{
   justify-content: center;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:1030px) {
   .footer-container{
     max-width: 600px;
     margin-top: 50px;

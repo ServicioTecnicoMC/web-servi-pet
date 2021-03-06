@@ -60,16 +60,29 @@ form .input-box span.details{
   font-weight: 500;
   margin-bottom: 5px;
 }
-.user-details .input-box input,textarea{
+.user-details .input-box input{
   height: 45px;
   width: 100%;
   outline: none;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #bcbcbc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+}
+
+.user-details textarea
+{
+  width: 100%;
+  height: 130px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 
