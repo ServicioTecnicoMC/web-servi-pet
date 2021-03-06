@@ -1,64 +1,56 @@
 let boton = document.getElementById("icono");
 let enlaces = document.getElementById("enlaces");
 let contador = 0;
-
-boton.addEventListener("click",function(){
-    if(contador == 0){
-        enlaces.className = ('enlaces dos');
-        contador=1;
-    }else{
-        enlaces.classList.remove('dos');
-        enlaces.className = ('enlaces uno');
-        contador = 0;
-    }
+boton.addEventListener("click", function() {
+  if (contador == 0) {
+    enlaces.className = ('enlaces dos');
+    contador = 1;
+  } else {
+    enlaces.classList.remove('dos');
+    enlaces.className = ('enlaces uno');
+    contador = 0;
+  }
 })
-
-window.addEventListener('resize', function(){
-    if(screen.width > 750){
-        contador=0;
-        enlaces.classList.remove('dos');
-        enlaces.className = ('enlaces uno');
-
-    }
+window.addEventListener('resize', function() {
+  if (screen.width > 750) {
+    contador = 0;
+    enlaces.classList.remove('dos');
+    enlaces.className = ('enlaces uno');
+  }
 })
-
-window.addEventListener('click',function(e){
-    console.log(e.target);
-    if(cerrado==false){
-        let span = document.querySelector('.links-header');
-        if(e.target == span){
-            contador=0;
-        }
+window.addEventListener('click', function(e) {
+  console.log(e.target);
+  if (cerrado == false) {
+    let span = document.querySelector('.links-header');
+    if (e.target == span) {
+      contador = 0;
     }
+  }
 });
-
-
 const menuItems = document.querySelectorAll('.enlaces a[href^="#"]');
 
 function getScrollTopByHref(element) {
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
 }
 
 function scrollToPosition(to) {
   // Si quieres el nativo solo
-    // window.scroll({
-    // top: to,
-    // behavior: "smooth",
-    // })
+  // window.scroll({
+  // top: to,
+  // behavior: "smooth",
+  // })
   smoothScrollTo(0, to);
 }
 
 function scrollToIdOnClick(event) {
-    event.preventDefault();
-    const to = getScrollTopByHref(event.currentTarget)- 80;
-    scrollToPosition(to);
+  event.preventDefault();
+  const to = getScrollTopByHref(event.currentTarget) - 80;
+  scrollToPosition(to);
 }
-
 menuItems.forEach(item => {
-    item.addEventListener('click', scrollToIdOnClick);
+  item.addEventListener('click', scrollToIdOnClick);
 });
-
 // Si desea compatibilidad con navegadores antiguos / que no admiten el desplazamiento suave nativo
 /**
  * Smooth scroll animation
@@ -72,15 +64,12 @@ function smoothScrollTo(endX, endY, duration) {
   const distanceX = endX - startX;
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
-
   duration = typeof duration !== 'undefined' ? duration : 400;
-
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
     return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
   };
-
   const timer = setInterval(() => {
     const time = new Date().getTime() - startTime;
     const newX = easeInOutQuart(time, startX, distanceX, duration);
@@ -91,21 +80,21 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
-
 $(function() {
-  $( "#button2" ).click(function() {
-    $( "#button2" ).addClass( "onclic", 250, validate);
+  $("#button2").click(function() {
+    $("#button2").addClass("onclic", 250, validate);
   });
 
   function validate() {
     setTimeout(function() {
-      $( "#button2" ).removeClass( "onclic" );
-      $( "#button2" ).addClass( "validate", 450, callback );
-    }, 2250 );
+      $("#button2").removeClass("onclic");
+      $("#button2").addClass("validate", 450, callback);
+    }, 2250);
   }
-    function callback() {
-      setTimeout(function() {
-        $( "#button2" ).removeClass( "validate" );
-      }, 1250 );
-    }
-  });
+
+  function callback() {
+    setTimeout(function() {
+      $("#button2").removeClass("validate");
+    }, 1250);
+  }
+});
