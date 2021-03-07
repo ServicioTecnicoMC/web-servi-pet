@@ -5,39 +5,39 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/style-presupuestos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
   <meta content="5mxVzLpxl3JZHe_TWmgNOvSJx4nbtlaC82yCch_upR8" name="google-site-verification">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="index.html">SERVI-PET</a>
-      </div>
-      <div class="icono" id="icono">
-        <span>&#9776;</span>
-      </div>
-      <div class="enlaces uno" id="enlaces">
-        <a class="active" href="index.html">Inicio</a> <a href="presupuestos.html">Presupuesto</a>
-      </div>
+  <header class="header" id="inicio">
+    <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+    <nav class="menu-navegacion">
+      <a href="index.html#inicio" class="active">Inicio</a>
+      <a href="index.html#servicio">Servicio</a>
+      <a href="index.html#galeria">Galeria</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="#">Presupuesto</a>
     </nav>
+    <div class="contenedor head">
+          <h1 class="titulo">BIENVENIDOS A <a href="index.html#inicio">SERVI-PET</a></h1>
+      </div>
   </header>
-  <main>
+  <main id="presupuesto">
 
   </main>
   <div class="presupuesto-in">
 
         <div class="presupuesto-form">
             <h1>PEDIDO DE PRESUPUESTO</h1>
-            <p>Complete el siguiente formulario con el detalle de los productos que necesite presupuestar y a la brevedad le responderemos.</p>
+            <p>Complete el siguiente formulario con el detalle de los productos que necesite y a la brevedad le responderemos.</p>
             <form>
                 <input class="presupuesto-form-txt" placeholder="Nombre y Apellido" required="" type="text">
                 <input class="presupuesto-form-txt" placeholder="Razón Social" required="" type="text">
                 <input class="presupuesto-form-txt" placeholder="Email" required="" type="text">
-                <input class="presupuesto-form-txt" placeholder="Telefono" required="" type="tel" id="Telefono" pattern="[0-9]{9}">
+                <input class="presupuesto-form-txt" placeholder="Telefono" required="" type="tel" id="Telefono" pattern="[0-9]{10}" maxlength="10">
                 <textarea class="presupuesto-form-textarea" placeholder="Pedido a presupuestar" required=""></textarea> <input class="presupuesto-form-btn" name="Submit" type="submit" value="ENVIAR">
             </form>
         </div>
@@ -58,7 +58,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js">
-  </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

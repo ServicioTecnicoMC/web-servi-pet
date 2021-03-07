@@ -9,23 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">SERVI-PET</a>
-            </div>
-            <div class="icono" id="icono">
-                <span>&#9776;</span>
-            </div>
-            <div class="enlaces uno" id="enlaces">
-                <a class="active" href="#Inicio">Inicio</a> <a href="presupuestos.html">Presupuesto</a> <a href="#about-section">Acerca de</a> <a href="#Contacto">Contacto</a>
-            </div>
-        </nav>
+    <header class="header" id="inicio">
+      <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+      <nav class="menu-navegacion">
+              <a href="#inicio">Inicio</a>
+              <a href="#servicio">Servicio</a>
+              <a href="#galeria">Galeria</a>
+              <a href="#contacto">Contacto</a>
+              <a href="presupuestos.html#presupuesto">Presupuesto</a>
+      </nav>
+      <div class="contenedor head">
+            <h1 class="titulo">BIENVENIDOS A SERVI-PET</h1>
+            <p class="copy">Si desea contactar con nosotros lo puede hacer en la seccion de <a href="#contacto" class="link"><span>&#8594;</span>Contacto <span>&#8592;</span> </a>.</p>
+        </div>
     </header>
-    <div class="page-content" id="Inicio">
-        <p>contenido de la pagina</p>
-    </div>
     <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span> LOREM </h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>LOREM</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>LOREM</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/uno.jpg" class="img-galeria" alt="Hola">
+                    <img src="img/dos.jpg" class="img-galeria" alt="">
+                    <img src="img/tres.jpg" class="img-galeria" alt="">
+                    <img src="img/cuatro.jpg" class="img-galeria" alt="">
+                    <img src="img/cinco.jpg" class="img-galeria" alt="">
+                    <img src="img/seis.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="contacto">
+            <h2 class="subtitulo">Contacto:</h2>
+            <section class="experts">
+
+
+                <div class="contact-in">
+                    <div class="contact-map">
+                        <iframe allowfullscreen height="auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.4171847452303!2d-67.73403918362202!3d-53.79985991180871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b167f8cd907e7%3A0x1e1604db4425c285!2sMak%20Plast%20S.R.L!5e0!3m2!1ses-419!2sar!4v1614985551022!5m2!1ses-419!2sar" style="border:0;" width="100%"></iframe>
+                    </div>
+                    <div class="contact-form">
+                        <h1>Contactanos</h1>
+                        <form>
+                            <input class="contact-form-txt" placeholder="Nombre" required="" type="text"> <input class="contact-form-txt" placeholder="Email" required="" type="text">
+                            <textarea class="contact-form-textarea" placeholder="Mensaje" required=""></textarea> <input class="contact-form-btn" name="Submit" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- <main>
         <div class="about-section" id="about-section">
             <div class="inner-container">
                 <h1>Acerca de La Empresa</h1>
@@ -35,19 +91,8 @@
                 </div>
             </div>
         </div>
-    </main>
-    <div class="contact-in" id="Contacto">
-        <div class="contact-map">
-            <iframe allowfullscreen height="auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.4171847452303!2d-67.73403918362202!3d-53.79985991180871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b167f8cd907e7%3A0x1e1604db4425c285!2sMak%20Plast%20S.R.L!5e0!3m2!1ses-419!2sar!4v1614985551022!5m2!1ses-419!2sar" style="border:0;" width="100%"></iframe>
-        </div>
-        <div class="contact-form">
-            <h1>Contactanos</h1>
-            <form>
-                <input class="contact-form-txt" placeholder="Nombre" required="" type="text"> <input class="contact-form-txt" placeholder="Email" required="" type="text">
-                <textarea class="contact-form-textarea" placeholder="Mensaje" required=""></textarea> <input class="contact-form-btn" name="Submit" type="submit" value="ENVIAR">
-            </form>
-        </div>
-    </div>
+    </main> -->
+
     <footer>
         <div class="footer-container">
             <div class="left-col">
@@ -64,6 +109,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
