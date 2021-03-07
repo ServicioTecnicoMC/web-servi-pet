@@ -1,3 +1,4 @@
+// ANIMACION BOTON //
 let boton = document.querySelector("#icono");
 let enlaces = document.querySelector(".enlaces");
 
@@ -9,12 +10,7 @@ window.addEventListener("resize", () => {
        enlaces.classList.remove("dos");
   });
 
-
-
-
-
-let enlaces = document.getElementById("enlaces");
-
+// ANIMACION BOTON END //
 
 const menuItems = document.querySelectorAll('.enlaces a[href^="#"]');
 
@@ -69,21 +65,3 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
-$(function() {
-  $("#button2").click(function() {
-    $("#button2").addClass("onclic", 250, validate);
-  });
-
-  function validate() {
-    setTimeout(function() {
-      $("#button2").removeClass("onclic");
-      $("#button2").addClass("validate", 450, callback);
-    }, 2250);
-  }
-
-  function callback() {
-    setTimeout(function() {
-      $("#button2").removeClass("validate");
-    }, 1250);
-  }
-});
